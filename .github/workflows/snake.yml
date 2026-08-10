@@ -16,24 +16,23 @@ jobs:
         timeout-minutes: 20
 
         steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
             - name: generate contribution graph SVGs
               uses: abozanona/pacman-contribution-graph@main
               with:
                   github_user_name: ${{ github.repository_owner }}
-                  github_token: ${{ secrets.PACMAN_TOKEN }}
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
                   games: 'galaga'
 
             - name: list generated files
               run: ls -la dist
 
             - name: push SVGs to the output branch
-              run: |
-                  cd dist
-                  git init -b output
-                  git config user.name "github-actions[bot]"
-                  git config user.email "github-actions[bot]@users.noreply.github.com"
-                  git add .
-                  git commit -m "Update arcade contribution graphs"
-                  git push --force "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
+              uses: crazy-max/ghaction-github-pages@v3.1.0
+              with:
+                  target_branch: output
+                  build_dir: dist
               env:
-                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
