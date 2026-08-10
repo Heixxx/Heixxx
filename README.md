@@ -7,13 +7,13 @@
 # 📊 GitHub Stats:
 
 ### Stats by github-readme-stats:
-![](https://api.github-readme-stats.vercel.app/api?username=Heixxx&theme=aura&hide_border=false&include_all_commits=true&count_private=false&cache_seconds=0&v=1)<br/>
+![](https://github-readme-stats.shion.dev/api?username=Heixxx&theme=aura&hide_border=false&include_all_commits=true&count_private=false)<br/>
 
 ### Streak by DenverCoder1:
 [![GitHub Streak](https://streak-stats.demolab.com?user=Heixxx&theme=aura&hide_border=false)](https://git.io/streak-stats)<br/>
 
 ### Languages by github-readme-stats:
-![](https://api.github-readme-stats.vercel.app/api/top-langs/?username=Heixxx&theme=aura&hide_border=false&include_all_commits=true&count_private=false&layout=compact&cache_seconds=0&v=1)<br/>
+![](https://github-readme-stats.shion.dev/api/top-langs/?username=Heixxx&theme=aura&hide_border=false&include_all_commits=true&count_private=false&layout=compact)<br/>
 
 ## 🚀 Galaga Contribution Graph
 
